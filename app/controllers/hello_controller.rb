@@ -1,4 +1,6 @@
 class HelloController < ApplicationController
   def index
+  	# Add a username ivar (@ sign means accessible externally)
+  	@user = current_user
   end
 end
