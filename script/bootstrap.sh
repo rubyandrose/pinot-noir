@@ -58,7 +58,6 @@ source script/helpers.sh
 install_homebrew && \
 install_from_brewfile && \
 setup_rbenv && \
-restart_services && \
 
 task_inform "Bootstrapping Dependencies..."
 
