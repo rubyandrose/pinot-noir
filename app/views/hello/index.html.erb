@@ -1,1 +1,5 @@
-<h1>Hello, Winos!</h1>
+<h1>Hello, <%= @user.full_name %></h1>
+
+This is what you look like, according to your Google account:<br>
+
+<%= image_tag(@user.picture_url) %>
