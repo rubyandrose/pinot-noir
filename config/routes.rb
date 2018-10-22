@@ -6,6 +6,8 @@ Rails.application.routes.draw do
     get 'sign_out', to: 'devise/sessions#destroy', as: :destroy_user_session
   end
 
-  root to: "hello#index"
+  resources :posts
+  root to: "posts#index"
+
   resource :about, controller: 'about', only: :show
 end
