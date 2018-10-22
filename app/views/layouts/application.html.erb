@@ -12,6 +12,11 @@
 <% if signed_in? %>
   <%= link_to "Sign out", destroy_user_session_path %>
 <% end %>
+<div class="logo">
+<%= link_to root_path do %>
+  <%= image_tag "logo.png", height: "120" %>
+<% end %>
+</div>
 
 <%= yield %>
 
