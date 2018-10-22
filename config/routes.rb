@@ -8,4 +8,7 @@ Rails.application.routes.draw do
 
   root to: "hello#index"
   resource :about, controller: 'about', only: :show
+
+  get '/profile', to: 'profile#show'
+
 end
