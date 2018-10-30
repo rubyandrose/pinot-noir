@@ -6,6 +6,6 @@ This is what you look like, according to your Google account:<br>
 
 <% if @post %>
 	Here's your first post: <br>
-	<%= @post.content %> <br>
+	<a href="/posts/<%= @post.id %>">Post <%=@post.id %></a><br>
 <% end %>
  
