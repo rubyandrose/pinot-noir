@@ -8,4 +8,5 @@ Rails.application.routes.draw do
 
   root to: "hello#index"
   resource :about, controller: 'about', only: :show
+  resources :posts, controller: 'posts', only: :show
 end
