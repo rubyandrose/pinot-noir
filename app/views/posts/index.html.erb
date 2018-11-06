@@ -2,7 +2,25 @@
 
 This is what you look like, according to your Google account:<br>
 
-<%= image_tag(@user.picture_url) %> <br>
+<%= image_tag(@user.picture_url) %> <br><br>
+
+
+<script>
+function blinker() {
+	$('.blinking').fadeOut(250);
+	$('.blinking').fadeIn(250);
+}
+setInterval(blinker, 500);
+</script>
+
+<p class="blinking">
+<b>IS YOUR FIRST NAME MORE POPULAR THAN YOUR LAST NAME????? 💯💯💯✅✅🔥🔥🔥🍆🍆🌋🌋🌋 <b><br><br>
+</p>
+
+<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1605_RC01/embed_loader.js"></script> 
+
+<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1605_RC01/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"<%= @user.full_name.split.first %>","geo":"US","time":"today 12-m"},{"keyword":"<%= @user.full_name.split.last %>","geo":"US","time":"today 12-m"}],"category":0,"property":""}, {"exploreQuery":"geo=US&q=<%= @user.full_name.split.first %>,<%= @user.full_name.split.last %>&date=today 12-m,today 12-m","guestPath":"https://trends.google.com:443/trends/embed/"}); </script> 
+
 
 <ul>
 <% @posts.each do |post| %>
